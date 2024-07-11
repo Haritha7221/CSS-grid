@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+
+    .outer{
+      display:flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .container{
+      
+      display:grid;
+      grid-template-columns: 1fr 0.7fr 0.8fr 0.25fr;
+      grid-template-rows: 1.7fr 0.7fr 0.8fr 0.1fr;
+      gap:9px;
+      background-color: black;
+      height:748px;
+      width:748px;
+     
+    }
+    .red{
+      background-color: #E72F24;
+      
+    }
+    .sec{
+      background-color: #F0F1EC;
+      grid-column: span 3;
+    }
+    .third{
+      background-color:#F0F1EC ;
+      grid-row: span 2;
+    }
+    .forth{
+      background-color: #F0F1EC;
+      grid-row: span 2;
+      grid-column: span 2;
+    }
+    .blue{
+      background-color: #004592;
+    }
+    .fifth{
+      background-color: #F0F1EC;
+      grid-row: span 2;
+      margin-top: 10px;
+    }
+    .sixth{
+      background-color: #F0F1EC;
+    }
+    .yellow{
+      background-color: #F9D01E;
+
+    }
+
+  </style>
+</head>
+
+<body>
+  <!-- Write your HTML here -->
+<div class="outer">
+  <div class="container">
+  <div class="red"></div>
+  <div class="sec"></div>
+  <div class="third"></div>
+  <div class="forth"></div>
+  <div class="blue"></div>
+  <div class="fifth"></div>
+  <div class="sixth"></div>
+  <div class="yellow"></div>
+  <div class="black"></div>
+
+  </div>
+</div>
+</body>
+
+</html>
